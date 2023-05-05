@@ -1,0 +1,96 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: black;
+    color: rgb(224, 224, 224);
+    font-family: 'Open Sans', sans-serif;
+}
+.spinner{
+    position: absolute;
+    top: 40%;
+    left: 43%
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 2%;
+}
+.header {
+    text-align: center;
+}
+.logo {
+    width: 38%;
+    height: 90px;
+    fill: yellow;
+}
+main {
+    width: 85%;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 30px;
+    padding-bottom: 3%;
+}
+main > div {
+    height: 320px;
+    padding: 15px;
+    border-radius: 7px;
+}
+main > div:nth-child(1){
+    background-image: url("./image/bg-card-1.0c96fd00.png");
+}
+main > div:nth-child(2){
+    background-image: url("./image/bg-card-2.b0a7b209.png");
+}
+main > div:nth-child(3){
+    background-image: url("./image/bg-card-3.1914d853.png");
+}
+main > div:nth-child(4){
+    background-image: url("./image/bg-card-4.c21c4d4b.png");
+}
+main > div:nth-child(5){
+    background-image: url("./image/bg-card-5.67d061d6.png");
+}
+main > div:nth-child(6){
+    background-image: url("./image/bg-card-6.b4fea25d.png");
+}
+
+main > div:hover {
+    box-shadow: -2px -2px 4px 2px rgb(77, 179, 219, 0.6), 2px 2px 4px 2px rgb(77, 179, 219, 0.6);
+}
+main > div > p > small{
+    font-size: 14px;
+    color: rgb(167, 167, 167);
+}
+.main-text{
+    height: 153px;
+    overflow: hidden;
+    margin: 18px 0;
+}
+main > div > hr {
+    background-color: brown;
+    height: 2px;
+    border: 0;
+}
+main > div > a {
+    display: block;
+    color: yellow;
+    margin: 20px 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+    }
+} 
+    

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Main(props){
     const {movies} = props;
@@ -10,8 +11,8 @@ export default function Main(props){
                         <h2>{movie.title}</h2>
                         <p><small>{new Date(movie.release_date).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'})}</small></p>
                         <p className="main-text">{movie.opening_crawl.substring(0, 260)}...</p>
-                        <hr></hr>
-                        <a href="#">More Info</a>
+                        <hr></hr>   
+                        <Link to={`/movies?id=${movie.episode_id}`}>More Info</Link>
                     </div>
                 ) 
             })}

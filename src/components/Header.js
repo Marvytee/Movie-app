@@ -11,10 +11,7 @@ export default function Header(){
                     </g>
                     </g>
                 </svg>
+
          </header>
     )
-}
-
-//     
-//     
-//     
+}     

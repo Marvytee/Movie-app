@@ -15,4 +15,4 @@ This App is a React App. It was created with data from an external API, it also 
 
 ## Demo
 
-Here is the link to the live Demo https://marvy-star-war-movie.netlify.app/
+Here is the link to the live Demo https://marvy-star-wars-movie.netlify.app/
